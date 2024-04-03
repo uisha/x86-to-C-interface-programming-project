@@ -1,5 +1,5 @@
 # x86-to-C Interface Programming Project
-Joshua Emmanuel G. Tipon
+Joshua Emmanuel G. Tipon <br />
 LBYARCH2 XX22 - Hiroki Asaba
 ## Average Execution Time Of Each Vector Size: 2^20, 2^24, and 2^30
 30 runs of the program were executed to get the average execution time of each kernel of each size and each version.
