@@ -25,11 +25,17 @@ Based on the results gatheres through the executions, we were able to learn that
 
 ## Screenshot of the Program Output With The Correctness Check (C).
 ### Debug Versions
+2^20
 ![debug 2^20](./debug1.png)
+2^24
 ![debug 2^24](./debug2.png)
+2^30
 ![debug 2^30](./debug3.png)
 
 # Release Versions
+2^20
 ![release 2^20](./release1.png)
+2^24
 ![release 2^24](./release2.png)
+2^30
 ![release 2^30](./release3.png)
