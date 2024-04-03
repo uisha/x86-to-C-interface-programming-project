@@ -28,11 +28,11 @@ void sanity_check(float sdot, float sdot_c) {
 	}
 }
 
- extern float dot_product_asm(float* a, float* b, int n);
+extern float dot_product_asm(float* a, float* b, int n);
 // extern void asmhello();
 int main() {
-	clock_t start, end;
-	double time_taken, total_time=0, average_time;
+	clock_t start_asm, end_asm, start_c, end_c;
+	double time_taken_asm, total_time_asm = 0, average_time_asm, time_taken_c, average_time_c, total_time_c = 0;
 	int n, input_size;
 	int cnt;
 
@@ -50,26 +50,34 @@ int main() {
 		float sdot = 0.0;
 		float sdot_c = 0.0;
 
-		start = clock();
+		start_asm = clock();
 		sdot = dot_product_asm(a, b, n);
-		end = clock();
-		time_taken = ((double)(end - start)) / CLOCKS_PER_SEC;
+		end_asm = clock();
+		time_taken_asm = ((double)(end_asm - start_asm)) / CLOCKS_PER_SEC;
 
+		start_c = clock();
 		sdot_c = dot_product_c(a, b, n);
+		end_c = clock();
+		time_taken_c = ((double)(end_c - start_c)) / CLOCKS_PER_SEC;
 
-		printf("[%d]Assembly Dot product:\n %f\n", cnt+1, sdot);
-		//printf("C Dot product:\n %f\n\n", sdot_c);
+		printf("[%d]\nAssembly Dot product:\n %f\n", cnt + 1, sdot);
+		printf("C Dot product:\n %f\n\n", sdot_c);
 		sanity_check(sdot, sdot_c);
 
-		printf("Time taken for assembly kernel: %f seconds.\n\n", time_taken);
-		total_time += time_taken;
+		printf("Time taken for Assembly kernel: %f seconds.\n\n", time_taken_asm);
+		printf("Time taken for C kernel: %f seconds.\n\n", time_taken_c);
+		total_time_asm += time_taken_asm;
+		total_time_c += time_taken_c;
 
 		free(a);
 		free(b);
 
 	}
-	average_time = total_time / 30;
+	average_time_asm = total_time_asm / 30;
+	average_time_c = total_time_c / 30;
 	printf("|---------------------------------------------------------------------|");
-	printf("\nAverage time for assembly kernel: %f seconds.\n", average_time);
+	printf("\nAverage time for assembly kernel: %f seconds.\n", average_time_asm);
+	printf("\nAverage time for C kernel: %f seconds.\n", average_time_c);
+
 	return 0;
 }
