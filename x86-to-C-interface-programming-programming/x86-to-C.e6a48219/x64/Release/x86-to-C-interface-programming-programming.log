@@ -1,0 +1,6 @@
+﻿  Performing Custom Build Tools
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 5 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  x86-to-C-interface-programming-programming.vcxproj -> C:\Users\63917\Documents\Joshua\x86-to-C-interface-programming-programming\x64\Release\x86-to-C-interface-programming-project.exe

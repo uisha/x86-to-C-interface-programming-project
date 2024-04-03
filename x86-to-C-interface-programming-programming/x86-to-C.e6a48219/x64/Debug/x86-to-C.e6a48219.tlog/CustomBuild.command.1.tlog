@@ -1,0 +1,2 @@
+^C:\USERS\63917\DOCUMENTS\JOSHUA\X86-TO-C-INTERFACE-PROGRAMMING-PROGRAMMING\ASMFUNC.ASM
+"C:\Program Files (x86)\SASM\NASM\nasm.exe" -f win64 "asmfunc.asm" -o "asmfunc.obj"
