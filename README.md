@@ -1,3 +1,6 @@
+# x86-to-C Interface Programming Project
+Joshua Emmanuel G. Tipon
+LBYARCH2 XX22 - Hiroki Asaba
 ## Average Execution Time Of Each Vector Size: 2^20, 2^24, and 2^30
 30 runs of the program were executed to get the average execution time of each kernel of each size and each version.
 
@@ -21,7 +24,7 @@
 Based on the results gatheres through the executions, we were able to learn that the Assembly Kernel were generally faster than the C Kernel in both debug and release versions, with the release version of the vector size of 2^30 being an outlier where the C Kernel was faster than the Assembly Kernel by 0.0313 seconds.
 
 ## Screenshot of the Program Output With The Correctness Check (C).
-# Debug Versions
+### Debug Versions
 ![debug 2^20](./debug1.png)
 ![debug 2^24](./debug2.png)
 ![debug 2^30](./debug3.png)
