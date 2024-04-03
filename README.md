@@ -25,17 +25,17 @@ Based on the results gatheres through the executions, we were able to learn that
 
 ## Screenshot of the Program Output With The Correctness Check (C).
 ### Debug Versions
-2<sup>20</sup>
+Debug Version: 2<sup>20</sup>
 ![debug 2<sup>20</sup>](./debug1.png)
-2<sup>24</sup>
+Debug Version: 2<sup>24</sup>
 ![debug 2<sup>24</sup>](./debug2.png)
-2<sup>30</sup>
+Debug Version: 2<sup>30</sup>
 ![debug 2<sup>30</sup>](./debug3.png)
 
 # Release Versions
-2<sup>20</sup>
+Release Version: 2<sup>20</sup>
 ![release 2<sup>20</sup>](./release1.png)
-2<sup>24</sup>
+Release Version: 2<sup>24</sup>
 ![release 2<sup>24</sup>](./release2.png)
-2<sup>30</sup>
+Release Version: 2<sup>30</sup>
 ![release 2<sup>30</sup>](./release3.png)
